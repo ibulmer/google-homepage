@@ -1,36 +1,96 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Google clone</title>
-    <link rel="stylesheet" href="stylesheet.css">
-  </head>
-  <body>
-    
-    <div id="bar">
-      <form>
-        <input id="boo" type="text" name="search">
-        <input id="search" type="submit" value="Google search">
-        <input id="lucky" type="submit" value="I'm feeling lucky">
-      </form>
-    </div>
-    <img src="https://www.google.com/images/srpr/logo11w.png"/>
-    <div id="top">
-      <ul>
-        <li>+Ian</li>
-        <li>Gmail</li>
-        <li>Images</li>
-      </ul>
-    </div>
-    <div id="bottom">
-      <ul>
-        <li class="left"><a href="http://www.amazon.com">Advertising</a></li>
-        <li class="left"><a href="http://en.wikipedia.org/wiki/Business">Business</a></li>
-        <li class="left"><a href="http://www.about.com">About</a></li>
-        <li class="right"><a href="http://en.wikipedia.org/wiki/Privacy">Privacy</a></li>
-        <li class="right"><a href="http://en.wikipedia.org/wiki/Term">Terms</a></li>
-        <li class="right"><a href="http://en.wikipedia.org/wiki/Location_%28geography%29">Settings</a></li>
-      </ul>
-    </div>
+img{
+    display: block;
+	height: 150px;
+	width: 425px;
+	margin: auto;
+    position:relative;
+    top: 225px;
    
-  </body>
-</html>
+}
+
+
+
+#boo{
+    width: 750px; 
+    height: 30px; 
+    border: 1px solid blue; 
+    padding: 5px;
+    display: block; 
+    position:relative;
+    margin: auto;
+    top:500px;
+}
+
+#search{
+    position:relative;
+    top: 520px;
+    left: 640px;
+    display: block;
+    height:36px;
+    font-weight: bold;
+}
+
+#lucky{
+     position:relative;
+    top: 485px;
+    left: 800px;
+    display: block;
+    height:35px;
+    font-weight: bold;
+}
+
+
+li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    font-size:23px;
+    font-family:arial;
+}
+#top{
+    position:relative;
+    bottom:180px;
+    left:1000px;
+}
+
+#top ul li{
+    display:inline;
+    
+    
+}
+
+#bottom{
+    background-color: #FFF9E7;
+    position:relative;
+    top:490px;
+    height:50px;
+    
+}
+
+#bottom ul li{
+    display:inline;
+    color:grey;
+    top:10px;
+    
+    
+}
+
+.right{
+    position:relative;
+    color:blue;
+    left:750px;
+}
+
+.left{
+    position:relative;
+}
+
+a:link {
+    color:grey;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color:grey;
+}
